@@ -1,9 +1,10 @@
 "use client"
 
 import Button from "@/components/ui/button"
-import { Youtube, Linkedin, Twitter, Instagram, Mail, Github } from 'lucide-react'
+import { Linkedin, Twitter, Mail, Github } from 'lucide-react'
 import Link from "next/link"
 import { useState } from "react";
+import Image from 'next/image';
 
 export default function Component() {
   const [selectedCertificate, setSelectedCertificate] = useState<string | null>(null);
@@ -32,7 +33,7 @@ export default function Component() {
           </div>
           <div className="ml-auto">
             <Button className="bg-teal-500 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-teal-600 transform transition-transform duration-300 ease-in-out hover:scale-105" onClick={handleEmailClick}>
-              Let's Talk
+              Let&apos;s Talk
             </Button>
           </div>
         </div>
@@ -107,7 +108,7 @@ export default function Component() {
       {selectedCertificate && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
           <div className="bg-white p-4 rounded-lg">
-            <img src={selectedCertificate} alt="Certificate" className="max-w-full h-auto" />
+            <Image src={selectedCertificate} alt="Certificate" className="max-w-full h-auto" />
             <button className="mt-4 bg-red-500 text-white px-4 py-2 rounded" onClick={() => setSelectedCertificate(null)}>Close</button>
           </div>
         </div>
@@ -128,9 +129,11 @@ export default function Component() {
                 Fitness club is a web app that provides a platform for users to track their fitness progress.
               </p>
               <div className="bg-zinc-900/50 rounded-lg p-2">
-                <img
+                <Image
                   src="/Fitness_App.png"
                   alt="Fitness Club"
+                  width={500}
+                  height={300}
                   className="rounded-lg w-full"
                 />
                 <button className="mt-2 bg-teal-500 text-white px-4 py-2 rounded" onClick={() => window.open('https://fitness-app-puce.vercel.app/', '_blank')}>Check Website</button>
@@ -143,9 +146,11 @@ export default function Component() {
                 A community forum where users can post questions and answers.
               </p>
               <div className="bg-zinc-900/50 rounded-lg p-6">
-                <img
+                <Image
                   src="/Community_forum.png"
                   alt="Community Forum"
+                  width={500}
+                  height={300}
                   className="rounded-lg w-full"
                 />
                 <button className="mt-2 bg-teal-500 text-white px-4 py-2 rounded" onClick={() => window.open('https://community-forum-sand.vercel.app/', '_blank')}>Check Website</button>
@@ -166,16 +171,16 @@ export default function Component() {
             <div className="space-y-4">
               <div className="flex items-center gap-4">
                 <h3 className="text-2xl font-bold">
-                  I'm Segni - a full stack software engineer crafting Digital experiences from Ethiopia
+                  I&apos;m Segni - a full stack software engineer crafting Digital experiences from Ethiopia
                 </h3>
               </div>
             </div>
             <div className="space-y-6 text-gray-400">
               <p>
-               Hey there! I'm Segni Assaye, a full stack software engineer based in Addis Ababa, Ethiopia. With over 2 years of experience, I specialize in building dynamic websites that make a lasting impression. My expertise covers HTML, CSS, JavaScript, C++, and more, allowing me to bring your digital vision to life with precision and creativity.
+               Hey there! I&apos;m Segni Assaye, a full stack software engineer based in Addis Ababa, Ethiopia. With over 2 years of experience, I specialize in building dynamic websites that make a lasting impression. My expertise covers HTML, CSS, JavaScript, C++, and more, allowing me to bring your digital vision to life with precision and creativity.
               </p>
               <p>
-               From sleek landing pages to powerful e-commerce platforms, I've got you covered. I focus on exceeding your expectations and take the time to understand your goals to ensure the final product meets your needs. Let's work together and turn your ideas into captivating online experiences!              </p>
+               From sleek landing pages to powerful e-commerce platforms, I&apos;ve got you covered. I focus on exceeding your expectations and take the time to understand your goals to ensure the final product meets your needs. Let&apos;s work together and turn your ideas into captivating online experiences!              </p>
             </div>
           </div>
         </div>
@@ -186,10 +191,10 @@ export default function Component() {
         <div className="max-w-7xl mx-auto text-center">
           <h2 id="contact" className="text-4xl md:text-5xl font-bold mb-4">Have a Project in Mind?</h2>
           <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-            I'd love to hear from you! Let's collaborate and bring your ideas to life.
+            I&apos;d love to hear from you! Let&apos;s collaborate and bring your ideas to life.
           </p>
           <Button className="bg-teal-500 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-teal-600 transform transition-transform duration-300 ease-in-out hover:scale-105" onClick={handleEmailClick}>
-              Let's Talk
+              Let&apos;s Talk
             </Button>
         </div>
       </section>
