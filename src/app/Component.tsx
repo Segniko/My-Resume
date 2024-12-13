@@ -136,7 +136,10 @@ export default function Component() {
                   height={300}
                   className="rounded-lg w-full"
                 />
-                <button className="mt-2 bg-teal-500 text-white px-4 py-2 rounded" onClick={() => window.open('https://fitness-app-puce.vercel.app/', '_blank')}>Check Website</button>
+                <div className="flex space-x-2">
+                  <button className="mt-2 bg-teal-500 text-white px-4 py-2 rounded" onClick={() => window.open('https://fitness-app-puce.vercel.app/', '_blank')}>Check Website</button>
+                  <button className="mt-2 bg-teal-500 text-white px-4 py-2 rounded" onClick={() => window.open('https://github.com/Segniko/Fitness-App', '_blank')}>Check Source Code</button>
+                </div>
               </div>
             </div>
             <div className="space-y-4">
@@ -153,7 +156,10 @@ export default function Component() {
                   height={300}
                   className="rounded-lg w-full"
                 />
-                <button className="mt-2 bg-teal-500 text-white px-4 py-2 rounded" onClick={() => window.open('https://community-forum-sand.vercel.app/', '_blank')}>Check Website</button>
+                <div className="flex space-x-2">
+                  <button className="mt-2 bg-teal-500 text-white px-4 py-2 rounded" onClick={() => window.open('https://community-forum-sand.vercel.app/', '_blank')}>Check Website</button>
+                  <button className="mt-2 bg-teal-500 text-white px-4 py-2 rounded" onClick={() => window.open('https://github.com/Segniko/Community-Forum', '_blank')}>Check Source Code</button>
+                </div>
               </div>
             </div>
           </div>
