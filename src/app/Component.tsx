@@ -91,7 +91,7 @@ export default function Component() {
               { role: "ALX", period: "2023 - 2024", image: "/ALX_Certificate.png" },
               { role: "FreeCodeCamp", period: "2023", image: "/Responsive_Web_Design.png" },
               { role: "FreeCodeCamp", period: "2023", image: "/Legacy_JavaScript_DSA.png" },
-              { role: "Walmart Global Tech", period: "2024", image: "/Walmart_Global_Tech.jpg" },
+              { role: "Walmart Global Tech", period: "2024", image: "/Walmart_Global_Tech_small.jpg" },
             ].map((item, index) => (
               <div key={`${item.role}-${index}`} className="flex flex-col justify-between border-b border-zinc-800 pb-4">
                 <div className="flex justify-between items-center">
