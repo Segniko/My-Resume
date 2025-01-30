@@ -79,18 +79,19 @@ export default function Component() {
         </div>
       </section>
 
-      {/* Education Section */}
+      {/* Certificate Section */}
       <section className="py-24 px-4 bg-zinc-900/30">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-2 mb-8">
             <div className="w-2 h-2 rounded-full bg-[#4ECCA3]" />
-            <h2 className="text-3xl font-bold">Education</h2>
+            <h2 className="text-3xl font-bold">Certificates</h2>
           </div>
           <div className="space-y-8">
             {[
               { role: "ALX", period: "2023 - 2024", image: "/ALX_Certificate.png" },
               { role: "FreeCodeCamp", period: "2023", image: "/Responsive_Web_Design.png" },
               { role: "FreeCodeCamp", period: "2023", image: "/Legacy_JavaScript_DSA.png" },
+              { role: "Walmart Global Tech", period: "2024", image: "/Walmart_Global_Tech.jpg" },
             ].map((item, index) => (
               <div key={`${item.role}-${index}`} className="flex flex-col justify-between border-b border-zinc-800 pb-4">
                 <div className="flex justify-between items-center">
