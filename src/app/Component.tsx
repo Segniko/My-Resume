@@ -91,7 +91,7 @@ export default function Component() {
               { role: "ALX", period: "2023 - 2024", image: "/ALX_Certificate.png" },
               { role: "FreeCodeCamp", period: "2023", image: "/Responsive_Web_Design.png" },
               { role: "FreeCodeCamp", period: "2023", image: "/Legacy_JavaScript_DSA.png" },
-              { role: "Walmart Global Tech", period: "2024", image: "/Walmart_Global_Tech_small.jpg" },
+              { role: "Walmart Global Tech", period: "2024", image: "/Walmart_Global_Tech.jpg" },
             ].map((item, index) => (
               <div key={`${item.role}-${index}`} className="flex flex-col justify-between border-b border-zinc-800 pb-4">
                 <div className="flex justify-between items-center">
@@ -109,7 +109,13 @@ export default function Component() {
       {selectedCertificate && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
           <div className="bg-white p-4 rounded-lg">
-            <Image src={selectedCertificate} alt="Certificate" className="max-w-full h-auto" />
+            <Image 
+              src={selectedCertificate} 
+              alt="Certificate" 
+              className="max-w-full h-auto max-h-[70vh] w-auto" 
+              width={600} 
+              height={400}
+            />
             <button className="mt-4 bg-red-500 text-white px-4 py-2 rounded" onClick={() => setSelectedCertificate(null)}>Close</button>
           </div>
         </div>
