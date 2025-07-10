@@ -25,7 +25,7 @@ export default function Component() {
       {/* Navigation */}
       <nav className="w-full bg-black/50 backdrop-blur-lg border-b border-white/5">
         <div className="flex justify-between items-center w-full p-4">
-          <Link href="/" className="text-xl font-cursive">My Resume</Link>
+          <Link href="/" className="text-xl font-cursive">My Portfolio</Link>
           <div className="flex space-x-8 flex-grow justify-center">
             <Link href="#projects" className="text-sm text-gray-400 hover:text-white transition-colors">Projects</Link>
             <Link href="#skills" className="text-sm text-gray-400 hover:text-white transition-colors">Skills</Link>
