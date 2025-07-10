@@ -69,7 +69,7 @@ export default function Component() {
           </div>
           <div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {["HTML", "CSS", "JavaScript", "React", "Responsive Web Design", "C++", "React Native", "Git Version Control", "Python", "Java"].map((skill) => (
+              {["HTML", "CSS", "JavaScript", "React", "Responsive Web Design", "C++", "React Native", "Git Version Control", "Python", "Java", "C#", "C"].map((skill) => (
                 <div key={skill} className="bg-zinc-900/50 rounded-lg px-4 py-4 text-xl hover:bg-zinc-800 transition-colors">
                   {skill}
                 </div>
