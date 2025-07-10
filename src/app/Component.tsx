@@ -130,6 +130,44 @@ export default function Component() {
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
+              <div className="text-sm text-gray-400">2025</div>
+              <h3 className="text-2xl font-bold">Microsoft Clone</h3>
+              <p className="text-gray-400">
+                A responsive clone of the Microsoft homepage built with modern web technologies.
+              </p>
+              <div className="bg-zinc-900/50 rounded-lg p-2">
+                <Image
+                  src="/Microsoft_Clone.png"
+                  alt="Microsoft Clone"
+                  width={500}
+                  height={300}
+                  className="rounded-lg w-full"
+                />
+                <div className="flex space-x-2">
+                  <button className="mt-2 bg-teal-500 text-white px-4 py-2 rounded" onClick={() => window.open('https://segni-microsoft-clone.vercel.app/', '_blank')}>Check Website</button>
+                </div>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <div className="text-sm text-gray-400">2025</div>
+              <h3 className="text-2xl font-bold">Crypto Platform</h3>
+              <p className="text-gray-400">
+                A cryptocurrency platform to track and analyze various cryptocurrencies in real-time.
+              </p>
+              <div className="bg-zinc-900/50 rounded-lg p-6">
+                <Image
+                  src="/CryptoPlatform.png"
+                  alt="Crypto Platform"
+                  width={500}
+                  height={300}
+                  className="rounded-lg w-full"
+                />
+                <div className="flex space-x-2">
+                  <button className="mt-2 bg-teal-500 text-white px-4 py-2 rounded" onClick={() => window.open('https://segnis-cryptoplatform.vercel.app/', '_blank')}>Check Website</button>
+                </div>
+              </div>
+            </div>
+            <div className="space-y-4">
               <div className="text-sm text-gray-400">2024</div>
               <h3 className="text-2xl font-bold">Fitness Club</h3>
               <p className="text-gray-400">
